@@ -1,0 +1,11 @@
+<textarea onkeypress="check()" id="text"></textarea>
+<script>
+function check() {
+    var a = document.querySelector('#text');
+	var word = a.value;
+    var c = "function";
+    for (index = word.indexOf(c);index >= 0; index = word.indexOf(c, index + 1)) {
+        console.log(index);
+    }
+}
+</script>
